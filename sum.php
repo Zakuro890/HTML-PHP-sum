@@ -1,15 +1,43 @@
-
-<?php
-if(isset($_POST['num1']) && isset($_POST['num2'])){
-  $num1 = $_POST['num1'];
-  $num2 = $_POST['num2'];
-  $result = $num1 + $num2;
-}
-?>
-
 <html>
   <head>
     <title>PHPを使った簡単な加算プログラム</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      
+      h1 {
+        color: #333;
+      }
+      
+      form {
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input[type="number"] {
+        width: 200px;
+        padding: 5px;
+      }
+      
+      button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      
+      p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <h1>加算プログラム</h1>
@@ -27,3 +55,4 @@ if(isset($_POST['num1']) && isset($_POST['num2'])){
     <?php endif; ?>
   </body>
 </html>
+
